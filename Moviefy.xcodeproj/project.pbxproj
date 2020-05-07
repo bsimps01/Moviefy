@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B3D4624245A399F00EFDA85 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3D4623245A399F00EFDA85 /* APIClient.swift */; };
+		1B3D4626245A411200EFDA85 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3D4625245A411200EFDA85 /* Request.swift */; };
+		1B3D4628245A43B100EFDA85 /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3D4627245A43B100EFDA85 /* Encoder.swift */; };
+		1B3D462A245A440E00EFDA85 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3D4629245A440E00EFDA85 /* Response.swift */; };
+		1B3D462C2460D48000EFDA85 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3D462B2460D47F00EFDA85 /* LogInViewController.swift */; };
+		1B3D462E2460D75700EFDA85 /* AuthenticationTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3D462D2460D75700EFDA85 /* AuthenticationTokenResponse.swift */; };
+		1B3D46302460D78400EFDA85 /* CreateSessionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3D462F2460D78400EFDA85 /* CreateSessionResponse.swift */; };
+		1B3D46322460D7B000EFDA85 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3D46312460D7B000EFDA85 /* Account.swift */; };
 		AB9F57FA243D54F1006612A3 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9F57F8243D54F1006612A3 /* MovieCell.swift */; };
 		AB9F57FB243D54F1006612A3 /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB9F57F9243D54F1006612A3 /* MovieCell.xib */; };
 		AB9F57FE243D57FF006612A3 /* MovieSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9F57FD243D57FF006612A3 /* MovieSection.swift */; };
@@ -39,6 +47,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1B3D4623245A399F00EFDA85 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		1B3D4625245A411200EFDA85 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		1B3D4627245A43B100EFDA85 /* Encoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encoder.swift; sourceTree = "<group>"; };
+		1B3D4629245A440E00EFDA85 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		1B3D462B2460D47F00EFDA85 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		1B3D462D2460D75700EFDA85 /* AuthenticationTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTokenResponse.swift; sourceTree = "<group>"; };
+		1B3D462F2460D78400EFDA85 /* CreateSessionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSessionResponse.swift; sourceTree = "<group>"; };
+		1B3D46312460D7B000EFDA85 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		AB9F57F8243D54F1006612A3 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		AB9F57F9243D54F1006612A3 /* MovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
 		AB9F57FD243D57FF006612A3 /* MovieSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSection.swift; sourceTree = "<group>"; };
@@ -91,6 +107,7 @@
 		AB9F5806243D6495006612A3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1B3D462B2460D47F00EFDA85 /* LogInViewController.swift */,
 				ABAB4F0B241A172E001E85CA /* ViewController.swift */,
 			);
 			path = Controller;
@@ -100,6 +117,13 @@
 			isa = PBXGroup;
 			children = (
 				AB9F580F243D6820006612A3 /* Movie.swift */,
+				1B3D462D2460D75700EFDA85 /* AuthenticationTokenResponse.swift */,
+				1B3D462F2460D78400EFDA85 /* CreateSessionResponse.swift */,
+				1B3D46312460D7B000EFDA85 /* Account.swift */,
+				1B3D4623245A399F00EFDA85 /* APIClient.swift */,
+				1B3D4625245A411200EFDA85 /* Request.swift */,
+				1B3D4627245A43B100EFDA85 /* Encoder.swift */,
+				1B3D4629245A440E00EFDA85 /* Response.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -219,12 +243,20 @@
 			files = (
 				AB9F5800243D62FF006612A3 /* TitleSection.swift in Sources */,
 				AB9F5803243D6327006612A3 /* TitleCell.swift in Sources */,
+				1B3D46302460D78400EFDA85 /* CreateSessionResponse.swift in Sources */,
+				1B3D462E2460D75700EFDA85 /* AuthenticationTokenResponse.swift in Sources */,
 				ABAB4F0C241A172E001E85CA /* ViewController.swift in Sources */,
+				1B3D46322460D7B000EFDA85 /* Account.swift in Sources */,
 				ABAB4F08241A172E001E85CA /* AppDelegate.swift in Sources */,
+				1B3D462A245A440E00EFDA85 /* Response.swift in Sources */,
 				AB9F5810243D6820006612A3 /* Movie.swift in Sources */,
+				1B3D462C2460D48000EFDA85 /* LogInViewController.swift in Sources */,
 				AB9F57FA243D54F1006612A3 /* MovieCell.swift in Sources */,
 				ABAB4F0A241A172E001E85CA /* SceneDelegate.swift in Sources */,
+				1B3D4626245A411200EFDA85 /* Request.swift in Sources */,
 				AB9F57FE243D57FF006612A3 /* MovieSection.swift in Sources */,
+				1B3D4628245A43B100EFDA85 /* Encoder.swift in Sources */,
+				1B3D4624245A399F00EFDA85 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

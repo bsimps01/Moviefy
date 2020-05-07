@@ -22,6 +22,7 @@ class ViewController: UIViewController {
         self.title = "Home"
         self.view.backgroundColor = UIColor.white
         fetchPopular()
+        fetchUpcoming()
     }
     
     func setupCollectionView() {
@@ -39,7 +40,40 @@ class ViewController: UIViewController {
     }
     
     func fetchPopular(){
-    
+        APIClient.shared.getPopularMovies { (result) in
+            switch result{
+            case let .success(movies):
+                DispatchQueue.main.async {
+                    self.movies = movies
+                    var basicSection = MovieSection()
+                    basicSection.numberOfItems = movies.count
+                    basicSection.items = movies
+                    self.sections.append(TitleSection(title: "Popular Movies"))
+                    self.sections.append(basicSection)
+                    self.setupCollectionView()
+                }
+            case let .failure(error):
+                print(error)
+            }
+        }
+        }
+    func fetchUpcoming() {
+        APIClient.shared.getUpcomingMovies { (result) in
+            switch result{
+            case let .success(movies):
+                DispatchQueue.main.async {
+                    self.movies = movies
+                    var basicSection = MovieSection()
+                    basicSection.numberOfItems = movies.count
+                    basicSection.items = movies
+                    self.sections.append(TitleSection(title: "Top Rated Movies"))
+                    self.sections.append(basicSection)
+                    self.setupCollectionView()
+                }
+            case let .failure(error):
+                print(error)
+            }
+        }
     }
 }
 
